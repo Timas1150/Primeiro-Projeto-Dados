@@ -1,0 +1,202 @@
+id_venda,data,produto,categoria,regiao,quantidade,preco_unitario
+V0001,2025-01-08,Batata P,Acompanhamentos,Centro-Oeste,2,14.40
+V0002,2025-02-15,Refrigerante Lata,Bebidas,Sul,3,7.50
+V0003,2025-03-22,Brownie,Sobremesas,Nordeste,4,14.40
+V0004,2025-04-02,Veggie Burger,Hambúrgueres,Sudeste,5,31.90
+V0005,2025-05-09,Onion Rings,Acompanhamentos,Norte,1,18.40
+V0006,2025-06-16,Milk-shake,Bebidas,Centro-Oeste,2,16.90
+V0007,2025-07-23,Cheddar Bacon,Hambúrgueres,Sul,3,35.40
+V0008,2025-08-03,Batata Cheddar,Acompanhamentos,Nordeste,4,18.90
+V0009,2025-09-10,Suco Natural,Bebidas,Sudeste,5,11.40
+V0010,2025-10-17,Classic Burger,Hambúrgueres,Norte,1,29.90
+V0011,2025-11-24,Batata P,Acompanhamentos,Centro-Oeste,2,13.40
+V0012,2025-12-04,Suco Natural,Bebidas,Sul,3,9.90
+V0013,2025-01-11,Classic Burger,Hambúrgueres,Nordeste,2,30.40
+V0014,2025-02-18,Batata P,Acompanhamentos,Sudeste,3,13.90
+V0015,2025-03-25,Refrigerante Lata,Bebidas,Norte,4,7.00
+V0016,2025-04-05,Brownie,Sobremesas,Centro-Oeste,5,13.90
+V0017,2025-05-12,Veggie Burger,Hambúrgueres,Sul,1,33.40
+V0018,2025-06-19,Onion Rings,Acompanhamentos,Nordeste,2,17.90
+V0019,2025-07-26,Milk-shake,Bebidas,Sudeste,3,16.40
+V0020,2025-08-06,Cheddar Bacon,Hambúrgueres,Norte,4,34.90
+V0021,2025-09-13,Batata Cheddar,Acompanhamentos,Centro-Oeste,5,20.40
+V0022,2025-10-20,Suco Natural,Bebidas,Sul,1,10.90
+V0023,2025-11-27,Classic Burger,Hambúrgueres,Nordeste,2,29.40
+V0024,2025-12-07,Batata Cheddar,Acompanhamentos,Sudeste,3,18.90
+V0025,2025-01-14,Suco Natural,Bebidas,Nordeste,2,11.40
+V0026,2025-02-21,Classic Burger,Hambúrgueres,Sudeste,3,29.90
+V0027,2025-03-01,Batata P,Acompanhamentos,Norte,4,13.40
+V0028,2025-04-08,Refrigerante Lata,Bebidas,Centro-Oeste,5,6.50
+V0029,2025-05-15,Brownie,Sobremesas,Sul,1,15.40
+V0030,2025-06-22,Veggie Burger,Hambúrgueres,Nordeste,2,32.90
+V0031,2025-07-02,Onion Rings,Acompanhamentos,Sudeste,3,17.40
+V0032,2025-08-09,Milk-shake,Bebidas,Norte,4,15.90
+V0033,2025-09-16,Cheddar Bacon,Hambúrgueres,Centro-Oeste,5,36.40
+V0034,2025-10-23,Batata Cheddar,Acompanhamentos,Sul,1,19.90
+V0035,2025-11-03,Suco Natural,Bebidas,Nordeste,2,10.40
+V0036,2025-12-10,Cheddar Bacon,Hambúrgueres,Sudeste,3,34.90
+V0037,2025-01-17,Batata Cheddar,Acompanhamentos,Norte,2,20.40
+V0038,2025-02-24,Suco Natural,Bebidas,Centro-Oeste,3,10.90
+V0039,2025-03-04,Classic Burger,Hambúrgueres,Sul,4,29.40
+V0040,2025-04-11,Batata P,Acompanhamentos,Nordeste,5,12.90
+V0041,2025-05-18,Refrigerante Lata,Bebidas,Sudeste,1,8.00
+V0042,2025-06-25,Brownie,Sobremesas,Norte,2,14.90
+V0043,2025-07-05,Veggie Burger,Hambúrgueres,Centro-Oeste,3,32.40
+V0044,2025-08-12,Onion Rings,Acompanhamentos,Sul,4,16.90
+V0045,2025-09-19,Milk-shake,Bebidas,Nordeste,5,17.40
+V0046,2025-10-26,Cheddar Bacon,Hambúrgueres,Sudeste,1,35.90
+V0047,2025-11-06,Batata Cheddar,Acompanhamentos,Norte,2,19.40
+V0048,2025-12-13,Milk-shake,Bebidas,Centro-Oeste,3,15.90
+V0049,2025-01-20,Cheddar Bacon,Hambúrgueres,Sul,2,36.40
+V0050,2025-02-27,Batata Cheddar,Acompanhamentos,Centro-Oeste,3,19.90
+V0051,2025-03-07,Suco Natural,Bebidas,Sul,4,10.40
+V0052,2025-04-14,Classic Burger,Hambúrgueres,Nordeste,5,28.90
+V0053,2025-05-21,Batata P,Acompanhamentos,Sudeste,1,14.40
+V0054,2025-06-01,Refrigerante Lata,Bebidas,Norte,2,7.50
+V0055,2025-07-08,Brownie,Sobremesas,Centro-Oeste,3,14.40
+V0056,2025-08-15,Veggie Burger,Hambúrgueres,Sul,4,31.90
+V0057,2025-09-22,Onion Rings,Acompanhamentos,Nordeste,5,18.40
+V0058,2025-10-02,Milk-shake,Bebidas,Sudeste,1,16.90
+V0059,2025-11-09,Cheddar Bacon,Hambúrgueres,Norte,2,35.40
+V0060,2025-12-16,Onion Rings,Acompanhamentos,Centro-Oeste,3,16.90
+V0061,2025-01-23,Milk-shake,Bebidas,Sul,2,17.40
+V0062,2025-02-03,Cheddar Bacon,Hambúrgueres,Nordeste,3,35.90
+V0063,2025-03-10,Batata Cheddar,Acompanhamentos,Sudeste,4,19.40
+V0064,2025-04-17,Suco Natural,Bebidas,Norte,5,9.90
+V0065,2025-05-24,Classic Burger,Hambúrgueres,Centro-Oeste,1,30.40
+V0066,2025-06-04,Batata P,Acompanhamentos,Sul,2,13.90
+V0067,2025-07-11,Refrigerante Lata,Bebidas,Nordeste,3,7.00
+V0068,2025-08-18,Brownie,Sobremesas,Sudeste,4,13.90
+V0069,2025-09-25,Veggie Burger,Hambúrgueres,Norte,5,33.40
+V0070,2025-10-05,Onion Rings,Acompanhamentos,Centro-Oeste,1,17.90
+V0071,2025-11-12,Milk-shake,Bebidas,Sul,2,16.40
+V0072,2025-12-19,Veggie Burger,Hambúrgueres,Nordeste,3,31.90
+V0073,2025-01-26,Onion Rings,Acompanhamentos,Sudeste,2,18.40
+V0074,2025-02-06,Milk-shake,Bebidas,Norte,3,16.90
+V0075,2025-03-13,Cheddar Bacon,Hambúrgueres,Sudeste,4,35.40
+V0076,2025-04-20,Batata Cheddar,Acompanhamentos,Norte,5,18.90
+V0077,2025-05-27,Suco Natural,Bebidas,Centro-Oeste,1,11.40
+V0078,2025-06-07,Classic Burger,Hambúrgueres,Sul,2,29.90
+V0079,2025-07-14,Batata P,Acompanhamentos,Nordeste,3,13.40
+V0080,2025-08-21,Refrigerante Lata,Bebidas,Sudeste,4,6.50
+V0081,2025-09-01,Brownie,Sobremesas,Norte,5,15.40
+V0082,2025-10-08,Veggie Burger,Hambúrgueres,Centro-Oeste,1,32.90
+V0083,2025-11-15,Onion Rings,Acompanhamentos,Sul,2,17.40
+V0084,2025-12-22,Brownie,Sobremesas,Nordeste,3,13.90
+V0085,2025-01-02,Veggie Burger,Hambúrgueres,Sudeste,2,33.40
+V0086,2025-02-09,Onion Rings,Acompanhamentos,Norte,3,17.90
+V0087,2025-03-16,Milk-shake,Bebidas,Centro-Oeste,4,16.40
+V0088,2025-04-23,Cheddar Bacon,Hambúrgueres,Sul,5,34.90
+V0089,2025-05-03,Batata Cheddar,Acompanhamentos,Nordeste,1,20.40
+V0090,2025-06-10,Suco Natural,Bebidas,Sudeste,2,10.90
+V0091,2025-07-17,Classic Burger,Hambúrgueres,Norte,3,29.40
+V0092,2025-08-24,Batata P,Acompanhamentos,Centro-Oeste,4,12.90
+V0093,2025-09-04,Refrigerante Lata,Bebidas,Sul,5,8.00
+V0094,2025-10-11,Brownie,Sobremesas,Nordeste,1,14.90
+V0095,2025-11-18,Veggie Burger,Hambúrgueres,Sudeste,2,32.40
+V0096,2025-12-25,Refrigerante Lata,Bebidas,Norte,3,6.50
+V0097,2025-01-05,Brownie,Sobremesas,Centro-Oeste,2,15.40
+V0098,2025-02-12,Veggie Burger,Hambúrgueres,Sul,3,32.90
+V0099,2025-03-19,Onion Rings,Acompanhamentos,Nordeste,4,17.40
+V0100,2025-04-26,Milk-shake,Bebidas,Sul,5,15.90
+V0101,2025-05-06,Cheddar Bacon,Hambúrgueres,Nordeste,1,36.40
+V0102,2025-06-13,Batata Cheddar,Acompanhamentos,Sudeste,2,19.90
+V0103,2025-07-20,Suco Natural,Bebidas,Norte,3,10.40
+V0104,2025-08-27,Classic Burger,Hambúrgueres,Centro-Oeste,4,28.90
+V0105,2025-09-07,Batata P,Acompanhamentos,Sul,5,14.40
+V0106,2025-10-14,Refrigerante Lata,Bebidas,Nordeste,1,7.50
+V0107,2025-11-21,Brownie,Sobremesas,Sudeste,2,14.40
+V0108,2025-12-01,Batata P,Acompanhamentos,Norte,3,12.90
+V0109,2025-01-08,Refrigerante Lata,Bebidas,Centro-Oeste,2,8.00
+V0110,2025-02-15,Brownie,Sobremesas,Sul,3,14.90
+V0111,2025-03-22,Veggie Burger,Hambúrgueres,Nordeste,4,32.40
+V0112,2025-04-02,Onion Rings,Acompanhamentos,Sudeste,5,16.90
+V0113,2025-05-09,Milk-shake,Bebidas,Norte,1,17.40
+V0114,2025-06-16,Cheddar Bacon,Hambúrgueres,Centro-Oeste,2,35.90
+V0115,2025-07-23,Batata Cheddar,Acompanhamentos,Sul,3,19.40
+V0116,2025-08-03,Suco Natural,Bebidas,Nordeste,4,9.90
+V0117,2025-09-10,Classic Burger,Hambúrgueres,Sudeste,5,30.40
+V0118,2025-10-17,Batata P,Acompanhamentos,Norte,1,13.90
+V0119,2025-11-24,Refrigerante Lata,Bebidas,Centro-Oeste,2,7.00
+V0120,2025-12-04,Classic Burger,Hambúrgueres,Sul,3,28.90
+V0121,2025-01-11,Batata P,Acompanhamentos,Nordeste,2,14.40
+V0122,2025-02-18,Refrigerante Lata,Bebidas,Sudeste,3,7.50
+V0123,2025-03-25,Brownie,Sobremesas,Norte,4,14.40
+V0124,2025-04-05,Veggie Burger,Hambúrgueres,Centro-Oeste,5,31.90
+V0125,2025-05-12,Onion Rings,Acompanhamentos,Norte,1,18.40
+V0126,2025-06-19,Milk-shake,Bebidas,Centro-Oeste,2,16.90
+V0127,2025-07-26,Cheddar Bacon,Hambúrgueres,Sul,3,35.40
+V0128,2025-08-06,Batata Cheddar,Acompanhamentos,Nordeste,4,18.90
+V0129,2025-09-13,Suco Natural,Bebidas,Sudeste,5,11.40
+V0130,2025-10-20,Classic Burger,Hambúrgueres,Norte,1,29.90
+V0131,2025-11-27,Batata P,Acompanhamentos,Centro-Oeste,2,13.40
+V0132,2025-12-07,Suco Natural,Bebidas,Sul,3,9.90
+V0133,2025-01-14,Classic Burger,Hambúrgueres,Nordeste,2,30.40
+V0134,2025-02-21,Batata P,Acompanhamentos,Sudeste,3,13.90
+V0135,2025-03-01,Refrigerante Lata,Bebidas,Norte,4,7.00
+V0136,2025-04-08,Brownie,Sobremesas,Centro-Oeste,5,13.90
+V0137,2025-05-15,Veggie Burger,Hambúrgueres,Sul,1,33.40
+V0138,2025-06-22,Onion Rings,Acompanhamentos,Nordeste,2,17.90
+V0139,2025-07-02,Milk-shake,Bebidas,Sudeste,3,16.40
+V0140,2025-08-09,Cheddar Bacon,Hambúrgueres,Norte,4,34.90
+V0141,2025-09-16,Batata Cheddar,Acompanhamentos,Centro-Oeste,5,20.40
+V0142,2025-10-23,Suco Natural,Bebidas,Sul,1,10.90
+V0143,2025-11-03,Classic Burger,Hambúrgueres,Nordeste,2,29.40
+V0144,2025-12-10,Batata Cheddar,Acompanhamentos,Sudeste,3,18.90
+V0145,2025-01-17,Suco Natural,Bebidas,Norte,2,11.40
+V0146,2025-02-24,Classic Burger,Hambúrgueres,Centro-Oeste,3,29.90
+V0147,2025-03-04,Batata P,Acompanhamentos,Sul,4,13.40
+V0148,2025-04-11,Refrigerante Lata,Bebidas,Nordeste,5,6.50
+V0149,2025-05-18,Brownie,Sobremesas,Sudeste,1,15.40
+V0150,2025-06-25,Veggie Burger,Hambúrgueres,Nordeste,2,32.90
+V0151,2025-07-05,Onion Rings,Acompanhamentos,Sudeste,3,17.40
+V0152,2025-08-12,Milk-shake,Bebidas,Norte,4,15.90
+V0153,2025-09-19,Cheddar Bacon,Hambúrgueres,Centro-Oeste,5,36.40
+V0154,2025-10-26,Batata Cheddar,Acompanhamentos,Sul,1,19.90
+V0155,2025-11-06,Suco Natural,Bebidas,Nordeste,2,10.40
+V0156,2025-12-13,Cheddar Bacon,Hambúrgueres,Sudeste,3,34.90
+V0157,2025-01-20,Batata Cheddar,Acompanhamentos,Norte,2,20.40
+V0158,2025-02-27,Suco Natural,Bebidas,Centro-Oeste,3,10.90
+V0159,2025-03-07,Classic Burger,Hambúrgueres,Sul,4,29.40
+V0160,2025-04-14,Batata P,Acompanhamentos,Nordeste,5,12.90
+V0161,2025-05-21,Refrigerante Lata,Bebidas,Sudeste,1,8.00
+V0162,2025-06-01,Brownie,Sobremesas,Norte,2,14.90
+V0163,2025-07-08,Veggie Burger,Hambúrgueres,Centro-Oeste,3,32.40
+V0164,2025-08-15,Onion Rings,Acompanhamentos,Sul,4,16.90
+V0165,2025-09-22,Milk-shake,Bebidas,Nordeste,5,17.40
+V0166,2025-10-02,Cheddar Bacon,Hambúrgueres,Sudeste,1,35.90
+V0167,2025-11-09,Batata Cheddar,Acompanhamentos,Norte,2,19.40
+V0168,2025-12-16,Milk-shake,Bebidas,Centro-Oeste,3,15.90
+V0169,2025-01-23,Cheddar Bacon,Hambúrgueres,Sul,2,36.40
+V0170,2025-02-03,Batata Cheddar,Acompanhamentos,Nordeste,3,19.90
+V0171,2025-03-10,Suco Natural,Bebidas,Sudeste,4,10.40
+V0172,2025-04-17,Classic Burger,Hambúrgueres,Norte,5,28.90
+V0173,2025-05-24,Batata P,Acompanhamentos,Centro-Oeste,1,14.40
+V0174,2025-06-04,Refrigerante Lata,Bebidas,Sul,2,7.50
+V0175,2025-07-11,Brownie,Sobremesas,Centro-Oeste,3,14.40
+V0176,2025-08-18,Veggie Burger,Hambúrgueres,Sul,4,31.90
+V0177,2025-09-25,Onion Rings,Acompanhamentos,Nordeste,5,18.40
+V0178,2025-10-05,Milk-shake,Bebidas,Sudeste,1,16.90
+V0179,2025-11-12,Cheddar Bacon,Hambúrgueres,Norte,2,35.40
+V0180,2025-12-19,Onion Rings,Acompanhamentos,Centro-Oeste,3,16.90
+V0181,2025-01-26,Milk-shake,Bebidas,Sul,2,17.40
+V0182,2025-02-06,Cheddar Bacon,Hambúrgueres,Nordeste,3,35.90
+V0183,2025-03-13,Batata Cheddar,Acompanhamentos,Sudeste,4,19.40
+V0184,2025-04-20,Suco Natural,Bebidas,Norte,5,9.90
+V0185,2025-05-27,Classic Burger,Hambúrgueres,Centro-Oeste,1,30.40
+V0186,2025-06-07,Batata P,Acompanhamentos,Sul,2,13.90
+V0187,2025-07-14,Refrigerante Lata,Bebidas,Nordeste,3,7.00
+V0188,2025-08-21,Brownie,Sobremesas,Sudeste,4,13.90
+V0189,2025-09-01,Veggie Burger,Hambúrgueres,Norte,5,33.40
+V0190,2025-10-08,Onion Rings,Acompanhamentos,Centro-Oeste,1,17.90
+V0191,2025-11-15,Milk-shake,Bebidas,Sul,2,16.40
+V0192,2025-12-22,Veggie Burger,Hambúrgueres,Nordeste,3,31.90
+V0193,2025-01-02,Onion Rings,Acompanhamentos,Sudeste,2,18.40
+V0194,2025-02-09,Milk-shake,Bebidas,Norte,3,16.90
+V0195,2025-03-16,Cheddar Bacon,Hambúrgueres,Centro-Oeste,4,35.40
+V0196,2025-04-23,Batata Cheddar,Acompanhamentos,Sul,5,18.90
+V0197,2025-05-03,Suco Natural,Bebidas,Nordeste,1,11.40
+V0198,2025-06-10,Classic Burger,Hambúrgueres,Sudeste,2,29.90
+V0199,2025-07-17,Batata P,Acompanhamentos,Norte,3,13.40
+V0200,2025-08-24,Refrigerante Lata,Bebidas,Sudeste,4,6.50
+

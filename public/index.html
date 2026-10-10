@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dashboard interativo de análise de vendas para a disciplina de Fundamentos de IA e Análise de Dados.">
+  <title>Timas Dados | Análise de Vendas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+</head>
+<body>
+  <section class="login-screen" id="loginScreen" aria-labelledby="loginTitle">
+    <div class="login-card">
+      <div class="brand login-brand">
+        <span class="brand-mark">HB</span>
+        <span>Timas Dados<br><small>painel de vendas</small></span>
+      </div>
+      <p class="eyebrow">Acesso restrito</p>
+      <h1 id="loginTitle">Entre no seu painel.</h1>
+      <p class="login-text">Informe seus dados para acessar a análise de vendas.</p>
+      <form id="loginForm" novalidate>
+        <div class="field">
+          <label for="loginUser">Usuário</label>
+          <input id="loginUser" name="usuario" type="text" autocomplete="username" required autofocus>
+        </div>
+        <div class="field">
+          <label for="loginPassword">Senha</label>
+          <input id="loginPassword" name="senha" type="password" autocomplete="current-password" required>
+        </div>
+        <button class="button button-primary login-button" type="submit">Entrar no dashboard</button>
+        <p class="login-error" id="loginError" role="alert" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+  <div id="dashboardApp" hidden>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <button class="button button-logout" id="logoutButton" type="button">Sair</button>
+      <a class="brand" href="#" aria-label="Página inicial do dashboard">
+        <span class="brand-mark">HB</span>
+        <span>Timas Dados<br><small>painel de vendas</small></span>
+      </a>
+      <span class="course-tag">Fundamentos de IA &amp; Análise de Dados</span>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Visão geral do negócio</p>
+        <h1>Entenda o ritmo das suas vendas.</h1>
+        <p class="hero-text">Explore faturamento, categorias e regiões em poucos cliques.</p>
+      </div>
+      <div class="data-status" id="dataStatus" role="status">
+        <span class="status-dot"></span>
+        <span id="dataStatusText">Dados demonstrativos carregados</span>
+      </div>
+    </section>
+
+    <section class="hamburger-gallery" aria-labelledby="gallery-title">
+      <div class="gallery-heading">
+        <div>
+          <p class="eyebrow">Sabor em destaque</p>
+          <h2 id="gallery-title">O que movimenta o balcão</h2>
+        </div>
+        <span class="gallery-note">Imagens ilustrativas</span>
+      </div>
+      <div class="gallery-grid">
+        <figure class="food-card">
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=85" alt="Hambúrguer artesanal com queijo e salada" loading="lazy">
+          <figcaption><strong>Clássicos</strong><span>Hambúrgueres</span></figcaption>
+        </figure>
+        <figure class="food-card">
+          <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&fit=crop&w=900&q=85" alt="Hambúrguer com queijo derretido e bacon" loading="lazy">
+          <figcaption><strong>Mais pedidos</strong><span>Combinações especiais</span></figcaption>
+        </figure>
+        <figure class="food-card">
+          <img src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?auto=format&fit=crop&w=900&q=85" alt="Hambúrguer artesanal servido com batatas" loading="lazy">
+          <figcaption><strong>Experiência completa</strong><span>Hambúrguer + acompanhamento</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="panel filters-panel" aria-labelledby="filters-title">
+      <div class="section-heading compact">
+        <div>
+          <p class="eyebrow">Exploração</p>
+          <h2 id="filters-title">Filtros da análise</h2>
+        </div>
+        <button class="button button-ghost" id="clearFilters" type="button">Limpar filtros</button>
+      </div>
+      <div class="filters-grid">
+        <div class="field">
+          <label for="startDate">Data inicial</label>
+          <input id="startDate" type="date">
+        </div>
+        <div class="field">
+          <label for="endDate">Data final</label>
+          <input id="endDate" type="date">
+        </div>
+        <div class="field">
+          <label for="categoryFilter">Categoria</label>
+          <select id="categoryFilter"><option value="">Todas as categorias</option></select>
+        </div>
+        <div class="field">
+          <label for="regionFilter">Região</label>
+          <select id="regionFilter"><option value="">Todas as regiões</option></select>
+        </div>
+        <div class="field search-field">
+          <label for="tableSearch">Pesquisar na tabela</label>
+          <input id="tableSearch" type="search" placeholder="Produto, ID ou categoria...">
+        </div>
+      </div>
+      <div class="filter-footer">
+        <span id="filterSummary">200 registros exibidos</span>
+        <span id="validationSummary" class="muted"></span>
+      </div>
+    </section>
+
+    <section class="metric-grid" aria-label="Indicadores principais">
+      <article class="metric-card accent-blue">
+        <div class="metric-label">Faturamento total <span class="info" title="Soma de quantidade × preço unitário">i</span></div>
+        <div class="metric-value" id="totalRevenue">R$ 0,00</div>
+        <div class="metric-note">nas vendas filtradas</div>
+      </article>
+      <article class="metric-card accent-green">
+        <div class="metric-label">Quantidade de vendas</div>
+        <div class="metric-value" id="salesCount">0</div>
+        <div class="metric-note">IDs únicos</div>
+      </article>
+      <article class="metric-card accent-amber">
+        <div class="metric-label">Unidades vendidas</div>
+        <div class="metric-value" id="unitsSold">0</div>
+        <div class="metric-note">produtos vendidos</div>
+      </article>
+      <article class="metric-card accent-purple">
+        <div class="metric-label">Ticket médio</div>
+        <div class="metric-value" id="averageTicket">R$ 0,00</div>
+        <div class="metric-note">faturamento por venda</div>
+      </article>
+    </section>
+
+    <section class="charts-grid" aria-label="Gráficos da análise">
+      <article class="panel chart-panel chart-wide">
+        <div class="section-heading">
+          <div><p class="eyebrow">Tendência</p><h2>Faturamento mensal</h2></div>
+          <span class="chart-unit">Em reais (R$)</span>
+        </div>
+        <div class="chart-wrap"><canvas id="monthlyChart" aria-label="Gráfico de linha do faturamento mensal"></canvas></div>
+      </article>
+      <article class="panel chart-panel">
+        <div class="section-heading">
+          <div><p class="eyebrow">Mix de produtos</p><h2>Por categoria</h2></div>
+          <span class="chart-unit">Em reais (R$)</span>
+        </div>
+        <div class="chart-wrap"><canvas id="categoryChart" aria-label="Gráfico de barras do faturamento por categoria"></canvas></div>
+      </article>
+      <article class="panel chart-panel">
+        <div class="section-heading">
+          <div><p class="eyebrow">Distribuição</p><h2>Por região</h2></div>
+          <span class="chart-unit">Em reais (R$)</span>
+        </div>
+        <div class="chart-wrap"><canvas id="regionChart" aria-label="Gráfico de barras do faturamento por região"></canvas></div>
+      </article>
+    </section>
+
+    <section class="panel table-panel" aria-labelledby="table-title">
+      <div class="section-heading table-heading">
+        <div><p class="eyebrow">Detalhamento</p><h2 id="table-title">Vendas filtradas</h2></div>
+        <div class="table-actions">
+          <label class="button button-secondary import-button" for="csvFile">Importar CSV</label>
+          <input id="csvFile" type="file" accept=".csv,text/csv" hidden>
+          <button class="button button-primary" id="exportCsv" type="button">Exportar dados</button>
+        </div>
+      </div>
+      <div id="emptyState" class="empty-state" hidden>
+        <span class="empty-icon">⌕</span>
+        <h3>Nenhum registro encontrado</h3>
+        <p>Ajuste os filtros ou limpe a pesquisa para ver resultados.</p>
+      </div>
+      <div class="table-scroll">
+        <table id="salesTable">
+          <thead><tr>
+            <th><button class="sort-button" data-sort="id_venda" type="button">ID <span></span></button></th>
+            <th><button class="sort-button" data-sort="data" type="button">Data <span></span></button></th>
+            <th><button class="sort-button" data-sort="produto" type="button">Produto <span></span></button></th>
+            <th><button class="sort-button" data-sort="categoria" type="button">Categoria <span></span></button></th>
+            <th><button class="sort-button" data-sort="regiao" type="button">Região <span></span></button></th>
+            <th class="numeric"><button class="sort-button" data-sort="quantidade" type="button">Qtd. <span></span></button></th>
+            <th class="numeric"><button class="sort-button" data-sort="preco_unitario" type="button">Preço unitário <span></span></button></th>
+            <th class="numeric"><button class="sort-button" data-sort="faturamento" type="button">Faturamento <span></span></button></th>
+          </tr></thead>
+          <tbody id="salesTableBody"></tbody>
+        </table>
+      </div>
+      <div class="table-footer" id="tableFooter"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="contact-area">
+        <span class="contact-label">Projeto e contato</span>
+        <a class="github-link" href="https://github.com/Timas1150" target="_blank" rel="noopener noreferrer">
+          <span class="github-badge">GH</span>
+          <span><strong>Timas1150</strong><small>Ver perfil no GitHub</small></span>
+          <span class="external-arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+      <span>Dashboard de vendas · atividade acadêmica</span>
+      <span>Os dados demonstrativos são fictícios.</span>
+    </div>
+  </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
